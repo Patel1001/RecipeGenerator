@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Recipe</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Make a Recipe</h1>
+    
+    <form id="recipe-form">
+        <label>Recipe Name:</label><br>
+        <input type="text" id="recipe-name" required><br><br>
+
+        <label>Recipe Type:</label><br>
+        <input type="radio" name="recipe-type" value="Veg" required> Veg<br>
+        <input type="radio" name="recipe-type" value="Non-Veg" required> Non-Veg<br><br>
+
+        <label>Select Ingredients:</label>
+        <div id="ingredients-list">
+            <!-- Ingredients checkboxes will be populated dynamically -->
+        </div><br>
+
+        <label>Recipe Steps:</label><br>
+        <div id="recipe-steps">
+            <textarea class="step" placeholder="Enter a step"></textarea>
+        </div>
+        <button type="button" onclick="addStep()">Add Step</button><br><br>
+
+        <button type="submit">Save Recipe</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

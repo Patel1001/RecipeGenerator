@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Recipe</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Find a Recipe</h1>
+    <form id="recipe-form">
+        <label>Choose Recipe Type:</label><br>
+        <input type="radio" name="type" value="Veg" required> Veg<br>
+        <input type="radio" name="type" value="Non-Veg" required> Non-Veg<br>
+        <input type="radio" name="type" value="Both" required> Both<br><br>
+        
+        <label>Choose Ingredients:</label><br>
+        <div id="ingredients-list" style="display: flex; gap: 20px;">
+            <!-- Tables for each category will be dynamically added here -->
+        </div>
+        
+        
+        <button type="submit">Find Recipes</button>
+    </form>
+    <div id="results"></div>
+    
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
